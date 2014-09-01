@@ -1,0 +1,21 @@
+Alfred\InsightBundle\Entity\Sites:
+    type: entity
+    table: sites
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        url:
+            type: string
+            length: 255
+        databaseName:
+            type: string
+            length: 255
+            column: database_name
+    lifecycleCallbacks: {  }

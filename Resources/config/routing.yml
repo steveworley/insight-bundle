@@ -1,0 +1,8 @@
+alfred_insight_import:
+    pattern: /_alfred/process
+    defaults: { _controller: AlfredInsightBundle:Import:process }
+
+alfred_insight_dashboard:
+    pattern: /insight
+    defaults:
+      _controller: AlfredInsightBundle:Dashboard:index

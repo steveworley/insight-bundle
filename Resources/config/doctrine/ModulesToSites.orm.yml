@@ -1,0 +1,20 @@
+Alfred\InsightBundle\Entity\ModulesToSites:
+    type: entity
+    table: modules_to_sites
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        siteId:
+            type: integer
+            column: site_id
+        moduleId:
+            type: integer
+            column: module_id
+        status:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

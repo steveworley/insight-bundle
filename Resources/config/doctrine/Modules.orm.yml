@@ -1,0 +1,30 @@
+Alfred\InsightBundle\Entity\Modules:
+    type: entity
+    table: modules
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        alias:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: 255
+        version:
+            type: string
+            length: 255
+        drupalVersion:
+            type: string
+            length: 255
+            column: drupal_version
+        managed:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
